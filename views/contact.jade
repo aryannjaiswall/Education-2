@@ -1,0 +1,27 @@
+extends base.jade
+
+block content 
+    div.contact-page-div-h1
+      h1.contactpage-h1
+        | Contact Us
+    section.contactpage
+        label(for='name') Name
+        br
+        input(type='name' name='name' placeholder='Enter your name')
+        br
+        label(for='email') Email
+        br
+        input(type='email' name='email' placeholder='Enter your Email')
+        br
+        label(for='topic') Topic
+        br
+        input(type='text' name='topic' placeholder='Enter the topic')
+        br
+        label(for='address') Address
+        br
+        input(type='text' name='address' placeholder='Enter your Address')
+        br
+        label(for='suggest') Any Suggestions...
+        textarea(name='suggest' id='' cols='30' rows='10' placeholder='Any Suggestions for us')
+        button.contactButton.ctbtn Submit
+        

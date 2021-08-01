@@ -1,0 +1,124 @@
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Education Website
+        link(rel='stylesheet' href='./stylesheets/style.css')
+        link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap' rel='stylesheet')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Abel&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=B612&display=swap" rel="stylesheet")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@200&display=swap" rel="stylesheet")
+
+        title My Site - #{title}
+        block scripts
+            script(src='/jquery.js')
+        block header 
+            header 
+                nav
+                    #logo.logo
+                        img(src='./images/logo.png' alt='')
+                    #navbar
+                        ul
+                            li
+                                a(href='/') Home
+                            li
+                                a(href='/about') About
+                            li
+                                a(href='/courses') Courses
+                            li
+                                a(href='/instructions') Instructions
+                            li
+                                a(href='/blogs') Blogs
+                            li
+                                a(href='/contact') Contact us
+                    .search-container
+                        form(action='/')
+                            input(type='text' placeholder='   Search Courses' name='search')
+                            i#searchIcon.medium.material-icons search
+        block content
+        block foot
+            footer
+                .row-1
+                    h1 Stay Updated
+                    h1 Let's Get Social 
+                .row-2
+                    .row-2-input
+                        input.footer-input(type='email' placeholder='Email Address...')
+                        button.footer-input-btn Subscribe Now
+                    .footer-icons
+                        a.fa.fa-facebook(href='#')
+                        a.fa.fa-twitter(href='#')
+                        a.fa.fa-linkedin(href='#')
+                        a.fa.fa-youtube(href='#')
+                        a.fa.fa-skype(href='#')
+                .column-1-h-p
+                    .column-1-h
+                        .column-1
+                            h3 About Us
+                            ul
+                                li
+                                    a(href='#') Online Learning
+                                li
+                                    a(href='#') About Us
+                                li
+                                    a(href='#') Careers
+                                li
+                                    a(href='#') Press Center
+                                li
+                                    a(href='#') Became An Instructor
+                        .column-1
+                            h3 Campus
+                            ul
+                                li
+                                    a(href='#') Our Plans
+                                li
+                                    a(href='#') Free Trials
+                                li
+                                    a(href='#') Acadmic Solutions
+                                li
+                                    a(href='#') Buisness Solutions
+                                li
+                                    a(href='#') Goverment Solutions
+                        .column-1
+                            h3 Study
+                            ul
+                                li
+                                    a(href='#') Admissions Policy
+                                li
+                                    a(href='#') Getting Started
+                                li
+                                    a(href='#') Online Application
+                                li
+                                    a(href='#') Visa Information
+                                li
+                                    a(href='#') Tution Calender
+                        .column-1
+                            h3 Support
+                            ul
+                                li
+                                    a(href='#') Support
+                                li
+                                    a(href='#') Contact Us
+                                li
+                                    a(href='#') System Requirments
+                                li
+                                    a(href='#') Register Activation Key
+                                li
+                                    a(href='#') Site Feedback
+                hr
+                .last
+                    p Copyright ©2021 All rights reserved | This template is made with by Colorlib

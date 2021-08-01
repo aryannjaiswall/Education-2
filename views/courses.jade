@@ -1,0 +1,170 @@
+extends base.jade
+
+block content 
+    div.contact-page-div-h1
+      h1.contactpage-h1
+        | Courses
+    section.cateogry#cateogry
+      .cateogry-p
+        p Popular Online Courses
+        h1 Lets Browse All Cateogry
+      .cards
+        .card
+          i.medium.material-icons.cateogryIcon web
+          h2 Web Design
+          p
+            | Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+          p
+            a(href='#') Read More > 
+        .card
+          i.medium.material-icons.cateogryIcon android
+          h2 App Development
+          p
+            | Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+          p
+            a(href='#') Read More > 
+        .card
+          i.medium.material-icons.cateogryIcon video_library
+          h2 Video Editing
+          p
+            | Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+          p
+            a(href='#') Read More > 
+      .cards
+        .card
+          i.medium.material-icons.cateogryIcon devices
+          h2 Digital Marketing
+          p
+            | Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+          p
+            a(href='#') Read More > 
+        .card
+          i.medium.material-icons.cateogryIcon restore_page
+          h2 Seo Marketing
+          p
+            | Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+          p
+            a(href='#') Read More > 
+        .card
+          i.medium.material-icons.cateogryIcon create
+          h2 Content Writing
+          p
+            | Sorem hpsum folor sixdsft amhtget, consectetur adipiscing eliht, sed do eiusmod tempor incidi.
+          p
+            a(href='#') Read More > 
+      #CateogryButton.wrapper
+        a(href='#')
+          span Find More Courses
+    section#topics.topics
+      .topic
+        .topic1.firstTopic
+          i.medium.material-icons.cateogryIcon laptop_mac
+          .counter
+            p.counterNumber(data-target='1600') 0
+            p.plusTopic  + topics
+        .topic1.secondTopic
+          i.medium.material-icons.cateogryIcon settings_remote
+          .counter
+            p.counterNumber(data-target='1600') 0
+            p.plusTopic  + topics
+        .topic1.thirdTopic
+          i.medium.material-icons.cateogryIcon language
+          .counter
+            p.counterNumber(data-target='1600') 0
+            p.plusTopic  + topics
+        .topic1.fourthTopic
+          i.medium.material-icons.cateogryIcon grade
+          .counter
+            p.counterNumber(data-target='1600') 0
+            p.plusTopic  + topics
+    section.popular-courses#popular-courses
+      .popular-course-p
+        p Most Popular Courses Of This Week
+        h1 Our Popular Course
+      .popular-cards
+        .popular-card
+          img(src='./images/popular1 (4).jpg' alt='')
+          p Graphic Design
+          .popular-icons
+            i.medium.material-icons grade
+            i.medium.material-icons grade
+            i.medium.material-icons grade
+            i.medium.material-icons grade
+            i.medium.material-icons grade
+            .popular-icons-review 102 Review
+          hr
+          .popular-count
+            .popular-person
+              i.medium.material-icons person
+              p 562
+            .popular-person-hearts
+              i.medium.material-icons favorite
+              p 562
+            .popular-free Free
+        .popular-card
+          img(src='./images/popular1 (2).jpg' alt='')
+          p Web Development
+          .popular-icons
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            .popular-icons-review 452 Review
+          hr
+          .popular-count
+            .popular-person
+              i.medium.material-icons person
+              p 562
+            .popular-person-hearts
+              i.medium.material-icons favorite
+              p 562
+            .popular-free Free
+        .popular-card
+          img(src='./images/popular1 (3).jpg' alt='')
+          p Digital Marketing
+          .popular-icons
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            i.medium.material-icons.cateogryIcon grade
+            .popular-icons-review 64 Review
+          hr
+          .popular-count
+            .popular-person
+              i.medium.material-icons person
+              p 562
+            .popular-person-hearts
+              i.medium.material-icons favorite
+              p 562
+            .popular-free Free
+      #CateogryButton.wrapper
+        a(href='#')
+          span Find More Courses
+
+    section.teachers
+      .teachers-p
+        p More About Our Faculties
+        h1 Our Best Teachers
+      .teachers-intro
+        .teachers-card
+          img(src='./images/Teacher (1).jpg' alt='')
+          .teachers-name Sofia Smith
+          p Faculty
+        .teachers-card
+          img(src='./images/Teacher (2).jpg' alt='')
+          .teachers-name Katrina Jade
+          p Faculty
+        .teachers-card
+          img(src='./images/Teacher (3).jpg' alt='')
+          .teachers-name David Warner
+          p Faculty
+        .teachers-card
+          img(src='./images/Teacher (4).jpg' alt='')
+          .teachers-name Alexandria Errosa
+          p Faculty
+      #Teacher.wrapper
+        a(href='#')
+          span View All Teachers
+    script(src='./javascripts/script.js')
