@@ -25,7 +25,8 @@ html
 
         title My Site - #{title}
         block scripts
-            script(src='/jquery.js')
+            script(src='./javascripts/script.js')
+        block style 
         block header 
             header 
                 nav
@@ -42,9 +43,9 @@ html
                             li
                                 a(href='/instructions') Instructions
                             li
-                                a(href='/blogs') Blogs
+                                a(href='/contact') Contact Us
                             li
-                                a(href='/contact') Contact us
+                                a(href='/blogs') Blog
                     .search-container
                         form(action='/')
                             input(type='text' placeholder='   Search Courses' name='search')

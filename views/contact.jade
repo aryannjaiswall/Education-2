@@ -1,10 +1,15 @@
 extends base.jade
 
+block scripts
+            script(src='./javascripts/contact.js')
+            script(src='https://requirejs.org/docs/release/2.3.5/minified/require.js')
+
 block content 
     div.contact-page-div-h1
       h1.contactpage-h1
         | Contact Us
     section.contactpage
+      form(action='/sign_up' method='post')
         label(for='name') Name
         br
         input(type='name' name='name' placeholder='Enter your name')
@@ -22,6 +27,7 @@ block content
         input(type='text' name='address' placeholder='Enter your Address')
         br
         label(for='suggest') Any Suggestions...
+        br
         textarea(name='suggest' id='' cols='30' rows='10' placeholder='Any Suggestions for us')
-        button.contactButton.ctbtn Submit
+      button.contactButton.ctbtn Submit
         

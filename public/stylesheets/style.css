@@ -183,14 +183,18 @@ nav {
 .cards {
     display: flex;
     font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    justify-content: space-around;
 }
 
 .card {
-    margin: 25px 50px;
+    height: 42vh;
+    width: 45vh;
+    display: flex;    
     padding: 40px;
     display: flex;
     flex-direction: column;
-    transition: all .4s ease-out 0s
+    transition: all .4s ease-out 0s;
+    margin: 40px 0;
 }
 
 .cards .card {
@@ -236,7 +240,7 @@ nav {
     display: flex;
     align-items: center;
     height: 50vh;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 10px;
     text-align: center;
     font-size: 40px;
@@ -249,10 +253,6 @@ nav {
 
 .topics i {
     font-size: 100px;
-}
-
-.topic1 {
-    padding: 0px 100px;
 }
 
 .firstTopic {
@@ -710,12 +710,12 @@ footer .last p {
     background-color: #8EE4AF;
 }
 
-.contactpage label {
+.contactpage form label {
     font-size: 1.5em;
     font-family: 'Rubik', sans-serif;
 }
 
-.contactpage input {
+.contactpage form input {
     width: 500px;
     height: 40px;
     font-family: 'Roboto', sans-serif;
@@ -723,9 +723,10 @@ footer .last p {
     border-radius: 10px;
     outline: none;
     border: none;
+    margin: 10px 0px;
 }
 
-.contactpage textarea {
+.contactpage form textarea {
     margin-top: 20px;
     width: 500px;
     font-family: 'Roboto', sans-serif;
@@ -781,4 +782,3 @@ footer .last p {
     color: black;
     font-size: 1.4em;
 }
-
