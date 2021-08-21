@@ -748,6 +748,17 @@ footer .last p {
     margin-top: 30px;
 }
 
+#ctbt{
+    width: 100px;
+    padding: 10px;
+}
+
+.inSub{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .ctbtn {
     background-color: white;
     color: black;
